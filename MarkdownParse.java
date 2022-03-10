@@ -18,10 +18,10 @@ public class MarkdownParse {
             if(closeParen == -1) {
                 return toReturn;
             }
-/*             if(closeParen == openParen + 1) {
+            if(closeParen == openParen + 1) {
                 currentIndex = closeParen + 1;
                 continue;
-            } */
+            }
             if(markdown.charAt(nextOpenBracket - 1) == '!') {
                 currentIndex = closeParen + 1;
                 continue;
